@@ -1,5 +1,5 @@
 exports.wait = () => {
-	return`*「 WAIT 」 SEDANG DIPROSES, TUNGGU ANJING!*`
+	return`*「 WAIT 」 SEDANG DIPROSES, DITUNGGU YA ANJING!*`
 }
 
 exports.succes = () => {
@@ -38,13 +38,13 @@ exports.lvlnoon = () => {
 
 exports.noregis = () => {
 	return`
-╭◪ *「 DAFTAR DULU 」*
-╰───────────────╮  
-╭───────────────╯
-├❏ Cara daftar ${prefix}daftar nama|umur* 
-├❏*contoh ${prefix}daftar Leo|12*
-├❏ *Nb* : Jangan Sering-Sering Spam Bot BANGSAT!
-╰───────────────╯
+╭◪ *「 DAFTAR DULU NGAB 」*
+╰────────────────────────────────────────────╮  
+╭────────────────────────────────────────────╯
+├❏ *Cara Daftar*: ${prefix}daftar nama|umur 
+├❏ *Contoh*: ${prefix}daftar Leo|12
+├❏ *Nb*: JANGAN DISPAM YA BOTNYA BANGSAT!
+╰────────────────────────────────────────────╯
 `
 }
 
@@ -100,16 +100,16 @@ exports.pc = () => {
 	return`*「 REGISTRASI 」*
 Untuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim 
 NOTE:
-*Jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
+*Jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan Nomor bot*`
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
 	return`
-╭◪ *「 DATA NEGARA LEOPARD BOT 」* 
+╭◪ *「 USER DATA LEOPARD BOT 」* 
 ╰───────────────╮  
 ╭───────────────╯
 ├━⊱Nama: ${namaUser}
-├━⊱Nomer: wa.me/${sender.split("@")[0]}
+├━⊱Nomor: wa.me/${sender.split("@")[0]}
 ├━⊱Umur: ${umurUser}
 ├━⊱Waktu pendaftaran: ${time}
 ├━⊱NS: ${serialUser}
@@ -126,12 +126,9 @@ exports.dellprem = (hnom) => {
 ╭◪ *「 PREMIUM DELETE 」* 
 ╰───────────────╮  
 ╭───────────────╯
-├━⊱Nomer:
-├━⊱${pnom}
-├━⊱Expired:
-├━⊱SORRY UDAH ABIS
-├━⊱NOTE:
-├━⊱SILAHKAN NIKMATI PREMIUMNYA:)
+├━⊱Nomor: ${pnom}
+├━⊱Expired: SORRY UDAH ABIS
+├━⊱NOTE: GOMENASAI
 ╰───────────────╯`
 }
 
@@ -140,12 +137,9 @@ exports.premadd = (pnom) => {
 ╭◪ *「 PREMIUM ADD 」* 
 ╰───────────────╮  
 ╭───────────────╯
-├━⊱Nomer:
-├━⊱${pnom}
-├━⊱Expired:
-├━⊱30 DAY
-├━⊱NOTE:
-├━⊱NIKMATI PREMIUMNYA:)
+├━⊱Nomor: ${pnom}
+├━⊱Expired: 30 DAY
+├━⊱NOTE: ASIQ PREMIUM ^_^
 ╰───────────────╯`
 }
 
@@ -190,12 +184,12 @@ exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel,
 ╭◪ *「 SELAMAT 」* 
 ╰───────────────╮  
 ╭───────────────╯
-├⊱❏ Nama : ${pushname}
-├⊱❏ Nomer : ${sender.split("@")[0]}
-├⊱❏ Xp : ${getLevelingXp(sender)}
-├⊱❏ Limit :  +3
-├⊱❏ Pangkat :  ${role}
-├⊱❏ Level : ${getLevel} ⊱ ${getLevelingLevel(sender)}
+├⊱❏ Nama: ${pushname}
+├⊱❏ Nomor: ${sender.split("@")[0]}
+├⊱❏ Xp: ${getLevelingXp(sender)}
+├⊱❏ Limit: +3
+├⊱❏ Pangkat: ${role}
+├⊱❏ Level: ${getLevel} ⊱ ${getLevelingLevel(sender)}
 ╰───────────────╯`}
  
 exports.limitend = (pushname) => {
@@ -205,7 +199,7 @@ exports.limitend = (pushname) => {
 exports.limitcount = (limitCounts) => {
 	return`
 *「 LIMIT COUNT 」*
-sisa limit anda : ${limitCounts}
+sisa limit anda: ${limitCounts}
 
 NOTE : Untuk mendapatkan limit. Bisa lewat naik level melalui group atau buylimit.
 `}
@@ -219,8 +213,8 @@ exports.uangkau = (pushname, sender, uangkau) => {
 ╭◪ *「 ATM 」*
 ╰───────────────╮  
 ╭───────────────╯
-├❏ *Name* : ${pushname}
-├❏ *Nomor* : ${sender.split("@")[0]}
-├❏ *Uang* : ${uangkau}
+├❏ *Name*: ${pushname}
+├❏ *Nomor*: ${sender.split("@")[0]}
+├❏ *Uang*: ${uangkau}
 ╰───────────────╯
 `}
